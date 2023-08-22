@@ -1,11 +1,18 @@
-
-
-/* nosotros.html */
-
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Handjet:wght@300&display=swap');
+.animate__fadeInDownBig{
+    margin-left: 3rem;
+    color: red;
+    font-family: 'Handjet', cursive;
+}
 .titulo-destacado span {
     color: crimson;
 }
-
+.coso{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+}
 .nosotros-iconos {
     margin: 3em 0;
 }
@@ -38,60 +45,163 @@
 .tarjetas img {
     width: 65px;
 }
+
 .spinner {
     width: 44px;
     height: 44px;
     animation: spinner-y0fdc1 2s infinite ease;
     transform-style: preserve-3d;
-   }
-   
-   .spinner > div {
-    background-color: rgba(0,77,255,0.2);
+}
+
+.spinner>div {
+    background-color: rgba(0, 77, 255, 0.2);
     height: 100%;
     position: absolute;
     width: 100%;
     border: 2px solid #004dff;
-   }
-   
-   .spinner div:nth-of-type(1) {
+}
+
+.spinner div:nth-of-type(1) {
     transform: translateZ(-22px) rotateY(180deg);
-   }
-   
-   .spinner div:nth-of-type(2) {
+}
+
+.spinner div:nth-of-type(2) {
     transform: rotateY(-270deg) translateX(50%);
     transform-origin: top right;
-   }
-   
-   .spinner div:nth-of-type(3) {
+}
+
+.spinner div:nth-of-type(3) {
     transform: rotateY(270deg) translateX(-50%);
     transform-origin: center left;
-   }
-   
-   .spinner div:nth-of-type(4) {
+}
+
+.spinner div:nth-of-type(4) {
     transform: rotateX(90deg) translateY(-50%);
     transform-origin: top center;
-   }
-   
-   .spinner div:nth-of-type(5) {
+}
+
+.spinner div:nth-of-type(5) {
     transform: rotateX(-90deg) translateY(50%);
     transform-origin: bottom center;
-   }
-   
-   .spinner div:nth-of-type(6) {
-    transform: translateZ(22px);
-   }
-   
-   @keyframes spinner-y0fdc1 {
-    0% {
-     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-   
-    50% {
-     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-   
-    100% {
-     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
-   }
+}
 
+.spinner div:nth-of-type(6) {
+    transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+    0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+
+    50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+
+    100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+}
+.fa-magnifying-glass{
+    color: #000000;
+}
+/*landing*/
+.landing{
+   background-image: url(../public/img/clay-banks-XvS-uKUoUao-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.land{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+.coso1{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+}
+.texto{text-align:left;
+    
+    display: flex;
+    flex-direction: column;
+}
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    background-color: #f66104;
+   
+  }
+  #btn{
+    margin-left: 1rem;
+    width: 15%;
+    background-color: #f66104;
+    color: #ffffff;
+  }
+  
+  #btn:hover,:focus {
+    color: #ffffff;
+    background: #f66104;
+    border: 1px solid #000306e8;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #00000000,
+                0 0 20px #008cff00,
+                0 0 50px #000000,
+                0 0 100px #008cff00;
+  }
+  .contenido{
+    height: 80vh;
+    display: flex;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .user{
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 250px;
+  }
+  p{color: #ffffff;
+    padding: 10px;
+    background: #00000047;
+    border-radius: 6px;
+    text-shadow: 4px 4px 4px rgba(37,18,18,0.66);
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    margin: 1rem;
+text-align: justify;
+  }
+  .foto{
+
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 20rem;
+    border-radius: 85% 15% 78% 22% / 50% 24% 76% 50% ;
+  }
+  .tituloland{
+    margin-left: 4rem;
+    text-shadow: 4px 4px 4px rgba(37,18,18,0.66);
+    color: #ffffff;
+  }
+  /*carrusel*/
+  .d-block{
+    height: 420px;
+  }

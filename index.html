@@ -1,128 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <title>Proyecto Integrador - Etapa 1</title>
-  </head>
-  <body class=".container-fluid">
-    <div></div>
-    <h1>PuntoCelular</h1>
-    <div class="spinner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Proyecto Integrador - Etapa 1</title>
+</head>
+
+<body class=".container-fluid landing">
+  <header class="land">
+
+    <div class="coso1">
+      <h1 class="animate__animated animate__fadeInDownBig titulo">PuntoCelular</h1>
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Tienda EIT</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+    </div>
+   
+    <div>
+      <button class="user"><i class="fa-solid fa-user fa-lg"></i></button>
+    </div>
+  </header>
+  <main class="contenido">
+    <div class="texto" >
+      <h2 class="tituloland animate__animated animate__fadeInLeftBig">SOBRE NOSOTROS</h2>
+      <p class="animate__animated animate__fadeInLeftBig">Bienvenidos a nuestra tienda de venta de celulares, tu destino definitivo para todas tus necesidades móviles. En
+        nuestro espacio moderno y acogedor, te ofrecemos una amplia gama de los últimos modelos de teléfonos celulares y
+        dispositivos inteligentes, cuidadosamente seleccionados para satisfacer tanto tus preferencias estéticas como
+        tus
+        necesidades tecnológicas.
+        </p>
+      <button id="btn" >
+        <a href="./inicio.html">INICIO</a>
+      </button>
+    </div>
+    <img class="foto animate__animated animate__fadeInBottomRight" src="./public/img/bruno-gomiero-jp7J14W9sSg-unsplash.jpg" alt="coso" >
+    <div>
 
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-            
-           
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
 
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="container">
-      <section class="row">
-        <!-- corousel -->
-      </section>
-      <section class="row my-5">
-        
-        <div class="card col-3 m-3 shadow-sm">
-          <img src="public/img/acer.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">ACER</h5>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
-              <li class="list-group-item">Precio</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div> <!-- .card -->
-
-        <div class="card col-3 m-3 shadow-sm">
-          <img src="public/img/advance.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Advance</h5>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
-              <li class="list-group-item">Precio</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div> <!-- .card -->
-
-        <div class="card col-3 m-3 shadow-sm">
-          <img src="public/img/apple.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Apple</h5>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
-              <li class="list-group-item">Precio</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div> <!-- .card -->
-
-        <div class="card col-3 m-3 shadow-sm">
-          <img src="public/img/dell.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase">Dell</h5>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
-              <li class="list-group-item">Precio</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div> <!-- .card -->
-
-        <div class="card col-3 m-3 shadow-sm">
-          <img src="public/img/hp.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase">Hp</h5>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
-              <li class="list-group-item">Precio</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div> <!-- .card -->
-
-        
-
-      </section>
-    </main>
-    <footer class="container-fluid">
-
-    </footer>
-
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>
