@@ -4,33 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
- 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <title>Proyecto Integrador - Etapa 1</title>
+  <title>Proyecto Integrador - Etapa 1 (Inicio)</title>
 </head>
 
-<body class=".container-fluid">
+<body class=".container-fluid bodyini">
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary inicio">
+      <div class="logito1">
+        <h1 class="animate__animated animate__fadeInDownBig ">PuntoCelular</h1>
+        <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <div class="coso">
-            <h1 class="animate__animated animate__fadeInDownBig">PuntoCelular</h1>
-            <div class="spinner">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,120 +34,59 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#">Celulares</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Celular</a>
+              <a class="nav-link active" aria-current="page" href="#">Accesorios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Acessorios</a>
+              <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
             </li>
-
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-sm" ></i> </button>
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
       </div>
     </nav>
+  </header>
+  <main class="mainini">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img src="./public/img/jason-blackeye-wCLyKP6DOlE-unsplash.jpg" class="d-block w-100" alt="foto2">
+          <img src="./public/img/courtney-clayton-xJ6UlIIl-jQ-unsplash.jpg" class="d-block  w-100 mx-auto" alt="1">
         </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="./public/img/daria-nepriakhina-_XR5rkprHQU-unsplash.jpg" class="d-block w-100" alt="foto3">
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./public/img/john-mark-arnold-soMvIOHmdgM-unsplash.jpg" class="d-block  w-100 mx-auto" alt="3">
         </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="./public/img/courtney-clayton-xJ6UlIIl-jQ-unsplash.jpg" class="d-block w-100" alt="foto4">
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./public/img/jason-blackeye-wCLyKP6DOlE-unsplash.jpg" class="d-block  w-100 mx-auto" alt="3">
         </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="./public/img/john-mark-arnold-soMvIOHmdgM-unsplash.jpg" class="d-block w-100" alt="foto5">
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./public/img/daria-nepriakhina-_XR5rkprHQU-unsplash.jpg" class="d-block  w-100 mx-auto" alt="3">
         </div>
       </div>
     </div>
-  </header>
-  <main class="container">
-    <section class="row">
-      <!-- corousel -->
-    </section>
-    <section class="row my-5">
-
-      <div class="card col-3 m-3 shadow-sm">
-        <img src="public/img/acer.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">ACER</h5>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="list-group-item text-uppercase">Color</li>
-            <li class="list-group-item">Caracteristicas</li>
-            <li class="list-group-item">Precio</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div> <!-- .card -->
-
-      <div class="card col-3 m-3 shadow-sm">
-        <img src="public/img/advance.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Advance</h5>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="list-group-item text-uppercase">Color</li>
-            <li class="list-group-item">Caracteristicas</li>
-            <li class="list-group-item">Precio</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div> <!-- .card -->
-
-      <div class="card col-3 m-3 shadow-sm">
-        <img src="public/img/apple.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Apple</h5>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="list-group-item text-uppercase">Color</li>
-            <li class="list-group-item">Caracteristicas</li>
-            <li class="list-group-item">Precio</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div> <!-- .card -->
-
-      <div class="card col-3 m-3 shadow-sm">
-        <img src="public/img/dell.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-uppercase">Dell</h5>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="list-group-item text-uppercase">Color</li>
-            <li class="list-group-item">Caracteristicas</li>
-            <li class="list-group-item">Precio</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div> <!-- .card -->
-
-      <div class="card col-3 m-3 shadow-sm">
-        <img src="public/img/hp.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-uppercase">Hp</h5>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="list-group-item text-uppercase">Color</li>
-            <li class="list-group-item">Caracteristicas</li>
-            <li class="list-group-item">Precio</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div> <!-- .card -->
-
-
-
-    </section>
+    <h2 class="productos animate__animated animate__bounceInLeft">Destacados</h2>
+    <div class="publicidad">
+      <div class="publi1" data-aos="fade-up-right"><img class="publici" src="./public/img/70011667.webp" alt="motorazr">
+      </div>
+      <div class="divdepubli">
+        <div class="publi2" data-aos="fade-up-left"><img src="./public/img/70010094.webp" alt="samsung"></div>
+        <div class="publi3" data-aos="fade-up-left"><img src="./public/img/70010956 (1).webp" alt="xiaomi"></div>
+      </div>
+    </div>
   </main>
-  <footer class="container-fluid">
-
+  <footer>
+    <p class="textop">&copy; 2023 Proyecto integrador 1 alfredo aguero ortiz</p>
+    <button class="btn btn-outline-success ayudita" type="submit"><i class="fa-solid fa-question"></i></button>
   </footer>
-
   <script type="module" src="/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
