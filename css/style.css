@@ -551,7 +551,7 @@ ul {
   display: flex;
 
   gap: 1rem;
-  border: 1px solid rgb(213, 0, 0);
+
   margin: 2rem;
   width: 95%;
   
@@ -563,7 +563,7 @@ ul {
   flex-wrap: wrap;
 }
 .tarjeta{
-  border: 1px solid black;
+ 
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -583,13 +583,15 @@ ul {
 }
 
 .celusdiv {
+  width: 50%;
   color: #000000;
-  border: 1px solid black;
+  
   display: flex;
   flex-direction: column;
 
   >h4,
   a {
+    color: #000000;
     justify-content: center;
     align-items: center;
    
@@ -683,4 +685,12 @@ ul {
   background-color:transparent;
   color: orangered;
   text-shadow: none;
+ }
+ .tarjeta:hover{
+  
+  border: 1px solid black;
+  transition: 0.5s;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
  }
