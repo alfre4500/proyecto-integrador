@@ -13,9 +13,9 @@ export default {
         emptyOutDir: true,
         rollupOptions: {
             input: {
-                carrito: resolve('pages/carrito.html'),
-                contacto: resolve('pages/contacto.html'),
-                nosotros: resolve('pages/nosotros.html'),
+                acessorios: resolve('acessorios.html'),
+                celulares: resolve('celulares.html'),
+                inicio: resolve('inicio.html'),
                 index: resolve('index.html')
             }
         }

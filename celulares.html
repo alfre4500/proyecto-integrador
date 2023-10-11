@@ -10,7 +10,7 @@
   <title>Proyecto Integrador - Etapa 1 (Inicio)</title>
 </head>
 
-<body class=".container-fluid bodyini">
+<body  class=".container-fluid bodyini">
 
   <header>
     <nav class="navbar navbar-expand-lg  inicio">
@@ -43,13 +43,39 @@
               <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
             </li>
           </ul>
-          <button class="ingre" type="submit">Ingresar</button>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-          <button class="btn btn-outline-success carrito" type="submit"><i
-              class="fa-solid fa-cart-shopping"></i></button>
+        <button class="btn rounded-fill"><i id="fa-moon" class="fa-solid fa-moon"></i></button>
+          <div  type="submit">
+            <div class="dropdown dropstart">
+              <a  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i
+                class="fa-solid fa-cart-shopping"></i>
+              </a>
+              <ul id="carrito" class="dropdown-menu mx-2">
+                <table class="table" id="lista-carrito" >
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+              
+                </table>
+                <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+<button id="vaciar-carrito" class="btn btn-primary">vaciar</button>
+<button id="procesar-pedido" class="btn btn-danger">procesar compra</button>
+                </div>
+              </ul>
+            </div>
+          
+
+
+            <!-- <a href="./carrito.html"><i
+              class="fa-solid fa-cart-shopping"></i></a> -->
+            </div>
         </div>
       </div>
     </nav>
@@ -93,13 +119,13 @@
         <a href="">Motorola</a>
         <a href="">Xiaomi</a>
       </div>
-      <div class="tarjetas">
+      <section id="lista-productos" class="tarjetas">
         <div class="tarjeta">
         <img class="fotito" src="./public/img/cel2.webp" alt="cel2" >
         <h3>Samsung Flip5</h3>
         <div class="arreglos">
           <p class="alinear">$389.999</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="1"  type="submit"  >Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -107,7 +133,7 @@
         <h3>Moto G72</h3>
         <div class="arreglos">
           <p class="alinear">$171.99</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="2" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -115,7 +141,7 @@
         <h3>Samsung Fold5</h3>
         <div class="arreglos">
           <p class="alinear">$629.999</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="3" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -123,7 +149,7 @@
         <h3>Motorola Razr 40</h3>
         <div class="arreglos">
           <p class="alinear">$479.999</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="4" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -131,7 +157,7 @@
         <h3>Samsung Galaxy A04</h3>
         <div class="arreglos">
           <p class="alinear">$96.049</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="5" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -139,7 +165,7 @@
         <h3>Moto E22</h3>
         <div class="arreglos">
           <p class="alinear">$76.499</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="6" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -147,7 +173,7 @@
         <h3>Moto G22</h3>
         <div class="arreglos">
           <p class="alinear">$93.499</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="7" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -155,7 +181,7 @@
         <h3>Moto E20</h3>
         <div class="arreglos">
           <p class="alinear">$63.749</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="8" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -163,7 +189,7 @@
         <h3>Samsung A22</h3>
         <div class="arreglos">
           <p class="alinear">$135.999</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="9" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -171,7 +197,7 @@
         <h3>Motorola Edge 40</h3>
         <div class="arreglos">
           <p class="alinear">$96.049</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="10" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -179,7 +205,7 @@
         <h3>Moto E32</h3>
         <div class="arreglos">
           <p class="alinear">$71.059</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="11" type="submit">Comprar</button>
         </div>
       </div>
       <div class="tarjeta">
@@ -187,10 +213,10 @@
         <h3>Samsung Galaxy A04</h3>
         <div class="arreglos">
           <p class="alinear">$96.049</p>
-          <button class="mejora" type="submit">Comprar</button>
+          <button class="mejora producto-carrito" data-id="12" type="submit">Comprar</button>
         </div>
       </div>
-      </div>
+      </section>
    
     </section>
   </main>
