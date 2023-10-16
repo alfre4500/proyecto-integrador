@@ -7,42 +7,68 @@ import './css/style.css'
 
 
 import { 
-  comprarProducto,
-   eliminarProducto, 
-   leerLocalStorage,
-   procesarPedido,
-   vaciarCarrito,
-  } 
-   from './src/carrito'
-
-
-
+  calcularTotal,
+  comprarProducto, 
+  eliminarProducto, 
+  eliminarProductoCompra, 
+  leerLocalStorage, 
+  leerLocalStorageCompra, 
+  obtenerEvento, 
+  procesarPedido, 
+  vaciarCarrito
+} from './src/carrito'
 
 const productos = document.getElementById('lista-productos')
-//console.log(productos)
 
 const carrito = document.getElementById('carrito')
-//console.log('carrito')
 
-const vaciarCarritoBtn = carrito.querySelector("#vaciar-carrito")
-const procesarPedidoBtn = carrito.querySelector("#procesar-pedido")
+const carritoCompra = document.getElementById('lista-compra')
+
 cargarEventos()
 
-function cargarEventos () {
+function cargarEventos() {
 
-  //se ejecuta cuando se presiona el boton comprar
-  productos.addEventListener('click',(e)=> comprarProducto(e))
+  const ruta = String(location.href)
+  console.log(ruta)
+  
+  if ( !ruta.includes('carrito.html') ) {
+      esIndex()
+  } else {
+    esCarrito()
+  }
 
-// al cargar el documento se muestra lo almacenado en el LS
-document.addEventListener("DOMContentLoaded" , leerLocalStorage())
+}
 
-//cuando se elimina un producto del carrito
-carrito.addEventListener('click', e => eliminarProducto(e))
+function esIndex() {
+  console.log('No estoy en carrito!')
+  const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
+  const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
+  console.log(vaciarCarritoBtn, procesarPedidoBtn)
 
+  // Se ejecuta cuando presiono sobre el botón comprar
+  productos.addEventListener('click', (e) => comprarProducto(e))
 
-vaciarCarritoBtn.addEventListener('click', e => vaciarCarrito(e))
+  // Al cargar el documento se muestra lo almacenado en el LS
+  document.addEventListener('DOMContentLoaded', leerLocalStorage())
 
-procesarPedidoBtn.addEventListener('click', e => procesarPedido(e))
+  //Cuando se elimina un producto del carrito
+  carrito.addEventListener('click', e => eliminarProducto(e))
 
-} 
+  //Vaciar carrito
+  vaciarCarritoBtn.addEventListener('click', e => vaciarCarrito(e))
 
+  // Enviar pedido a otra página
+  procesarPedidoBtn.addEventListener('click', e => procesarPedido(e))
+}
+function esCarrito (){
+  console.log('Estoy en carrito')
+  // Voy a leer el localStorage
+  document.addEventListener('DOMContentLoaded', leerLocalStorageCompra())
+
+calcularTotal()
+
+  carritoCompra.addEventListener("click", e =>eliminarProductoCompra(e))
+
+  carritoCompra.addEventListener('change', e => obtenerEvento(e))
+  carritoCompra.addEventListener('keyup', e => obtenerEvento(e))
+}

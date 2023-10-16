@@ -16,7 +16,8 @@ export default {
                 acessorios: resolve('acessorios.html'),
                 celulares: resolve('celulares.html'),
                 inicio: resolve('inicio.html'),
-                index: resolve('index.html')
+                index: resolve('index.html'),
+                
             }
         }
     }

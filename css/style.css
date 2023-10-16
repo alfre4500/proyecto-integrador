@@ -702,3 +702,23 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   display: flex;
   justify-content: center;
  }
+.col-6>p{
+ color: #000000!important;
+ background-color: none!important;
+ text-shadow: none!important;
+}
+.uno{
+  width: 150px!important;
+}
+/*alertas */
+.hola{
+  color: #000000;
+}
+.fa-solid{
+  color: #000000;
+}
+.precio{
+  text-shadow: none;
+  color: #000000;
+  background-color: white;
+}
