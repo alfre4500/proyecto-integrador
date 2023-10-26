@@ -170,7 +170,7 @@ export function procesarPedido(e) {
     if ( array.length === 0 ) {
         console.warn('El carrito está vacío')
     } else {
-        location.href = 'pages/carrito.html'
+        location.href = '/pages/carrito.html'
     }
 
 

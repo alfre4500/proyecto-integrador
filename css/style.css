@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .animate__fadeInDownBig {
   margin-left: 3rem;
   color: red;
@@ -140,7 +141,10 @@ body {
   margin-top: 1.3rem;
   margin-left: 1.3rem;
 }
-
+.mejora1{
+  display: flex;
+  margin-left: 3vh;
+}
 .texto {
   text-align: left;
 
@@ -148,52 +152,12 @@ body {
   flex-direction: column;
 }
 
-button {
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  border: 1px solid #ffffff80;
-  transition: 0.5s ease;
-  background-color: #f66104;
-
-}
-
-#btn {
-  margin-left: 1rem;
-  width: 15%;
-  background-color: #f66104;
-  color: #ffffff;
-}
-
-#btn:hover,
-:focus {
-  color: #ffffff;
-  background: #f66104;
-  border: 1px solid #000306e8;
-  text-shadow: 0 0 5px #ffffff,
-    0 0 10px #ffffff,
-    0 0 20px #ffffff;
-  box-shadow: 0 0 5px #00000000,
-    0 0 20px #008cff00,
-    0 0 50px #000000,
-    0 0 100px #008cff00;
-}
-
 .contenido {
   height: 80vh;
   display: flex;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+
 
 .user {
   margin-top: 1.5rem;
@@ -233,7 +197,7 @@ p {
 }
 
 .inicio {
-  
+
   display: flex;
   gap: 1rem;
 }
@@ -435,6 +399,9 @@ ul {
 .google-bg {
   background: #DD4B39;
 }
+h3{
+  text-align: left;
+}
 
 .footer-widget-heading h3 {
   color: #fff;
@@ -533,13 +500,14 @@ ul {
 }
 
 .celuini {
-  font-size: 20px;
-  margin: 1rem;
+  font-size: 30px;
+  margin-top: 2rem;
+  margin-left: 3.4rem;
   font-style: normal;
 }
 
 .texticel {
-  
+
   text-shadow: none;
   font-size: 15px;
   background-color: transparent;
@@ -554,16 +522,19 @@ ul {
 
   margin: 2rem;
   width: 95%;
-  
+
 }
-.tarjetas{
- 
+
+.tarjetas {
+
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
-.tarjeta{
- 
+
+.tarjeta {
+width: 15rem;
+padding: 5px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -585,7 +556,7 @@ ul {
 .celusdiv {
   width: 50%;
   color: #000000;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -594,12 +565,12 @@ ul {
     color: #000000;
     justify-content: center;
     align-items: center;
-   
+
     margin-left: 0.5rem;
   }
 }
 
-.ingre{
+.ingre {
   margin-right: 14px;
   position: relative;
   background-color: rgb(230, 34, 77);
@@ -634,31 +605,37 @@ ul {
 .ingre:hover::before {
   width: 100%;
 }
-.carrito{
+
+.carrito {
   margin-left: 10px;
 }
+
 /*tarjeta*/
-.tarjetas{
+.tarjetas {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 
 }
-.tarjeta>img{
+
+.tarjeta>img {
   width: 200px;
 }
-.fotito{
+
+.fotito {
   height: 200px;
   width: 200px;
-  
+
 }
-.arreglos{
+
+.arreglos {
   gap: 2rem;
   padding: 10px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
 }
-.mejora{
+
+.mejora {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -673,52 +650,109 @@ ul {
   font-weight: bolder;
   font-size: 16px;
 }
+
 .mejora:hover {
   transform: scale(1.2) rotate(10deg);
   background-color: #fa725a;
   color: white;
- }
- .alinear{
+}
+
+.alinear {
   padding: 0;
   margin: 2px;
   font-style: none;
-  background-color:transparent;
+  background-color: transparent;
   color: orangered;
   text-shadow: none;
- }
- .tarjeta:hover{
-  
+}
+
+.tarjeta:hover {
+
   border: 1px solid black;
   transition: 0.5s;
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
- }
- .fa-times-circle{
-  color: #000000!important;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
- }
- .text-center{
+.fa-times-circle {
+  color: #000000 !important;
+
+}
+
+.text-center {
   display: flex;
   justify-content: center;
- }
-.col-6>p{
- color: #000000!important;
- background-color: none!important;
- text-shadow: none!important;
 }
-.uno{
-  width: 150px!important;
+
+.col-6>p {
+  color: #000000 !important;
+  background-color: none !important;
+  text-shadow: none !important;
 }
+
+.uno {
+  width: 150px !important;
+}
+
 /*alertas */
-.hola{
+.hola {
   color: #000000;
 }
-.fa-solid{
+
+.fa-solid {
   color: #000000;
 }
-.precio{
+
+.precio {
   text-shadow: none;
   color: #000000;
   background-color: white;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.nav-link:hover {
+  color: #f50000;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #0c05eef6;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.inicio1{
+  text-decoration: none;
+ padding: 10px;
+ border-radius: 6px;
+  color: #000000;
+  background-color: rgb(221, 241, 0);
+  border: 2px solid rgb(255, 0, 0);
+}
+.inicio1:hover{
+  background-color:orangered;
+  color: black;
+  text-decoration: solid;
 }
